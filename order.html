@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script>
+        function handleOrder() {
+            alert("Order Successful");
+            window.location.href = "index.html"; // Change "index.html" to the URL of your home page
+        }
+    </script>
+</head>
+<body class="bg-img1">
+    <section class="order" id="order">
+        <h3 class="sub-heading">order now</h3>
+        <h1 class="heading">free and fast</h1>
+    
+        <form onsubmit="handleOrder(); return false;"> <!-- Prevent default form submission -->
+            <div class="inputbox">
+                <div class="input">
+                    <span>your name</span>
+                    <input type="text" placeholder="enter your name" required>
+                </div>
+    
+                <div class="input">
+                    <span>your number</span>
+                    <input type="number" placeholder="enter your number" required>
+                </div>
+            </div>
+    
+            <div class="inputbox">
+                <div class="input">
+                    <span>your order</span>
+                    <input type="text" placeholder="enter food name" required>
+                </div>
+        
+                <div class="input">
+                    <span>additional food</span>
+                    <input type="text" placeholder="extra with food">
+                </div>
+            </div>
+    
+            <div class="inputbox">
+                <div class="input">
+                    <span>how much</span>
+                    <input type="number" placeholder="how many orders" required>
+                </div>
+    
+                <div class="input">
+                    <span>date and time</span>
+                    <input type="datetime-local" required>
+                </div>
+            </div>
+    
+            <div class="inputbox">
+                <div class="input">
+                    <span>your address</span>
+                    <textarea name="" placeholder="enter your address" cols="30" rows="10" required></textarea>
+                </div>
+        
+                <div class="input">
+                    <span>your message</span>
+                    <textarea name="" placeholder="enter your message" cols="30" rows="10"></textarea>
+                </div>
+            </div>
+    
+            <input type="submit" value="order now" class="btn">
+            <a href="javascript_login.html" class="btn">sign in </a>
+        </form>
+    </section>
+</body>
+</html>
